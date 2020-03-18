@@ -1,14 +1,15 @@
 const Discord = require("discord.js")
-const prefix = ".";
+const prefix = "-";
+const token = "Njg5OTgxMzI2NjU2NjY3Njcx.XnKxSw.rQ9DX-dPIhPJGVMANyQ7tayPfrU";
 const client = new Discord.Client();
-const emojis = '677267870471684096';
+const emojis = '689980652547735552';
 const fs = require("fs");
 const https = require('http');
 const express = require('express');
 const moment = require('moment'); 
-const embedColor = "#36393e";
-const embedSuccess = "#22BF41";
-const embedFail = "#f30707";
+const embedColor = "#3080c0";
+const embedSuccess = "#3080c0";
+const embedFail = "#3080c0";
 const configg = require("./configg.json");//
 let coins = require("./coins.json");
 
@@ -2670,4 +2671,4 @@ client.on('message',async message => {
 
 
 
-client.login(process.env.BOT_TOKEN)
+client.login(token)
